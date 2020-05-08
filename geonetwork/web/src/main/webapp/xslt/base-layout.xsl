@@ -61,6 +61,17 @@
               title="{concat($env/system/site/name, ' - ', $env/system/site/organization)}"/>
 
         <xsl:call-template name="css-load"/>
+            <xsl:variable name="trackid">UA-31592543-1</xsl:variable>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="async" src="https://www.googletagmanager.com/gtag/js?id={$trackid}"><xsl:text> </xsl:text></script>
+	<script>
+	  <xsl:text disable-output-escaping="yes">
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  
+	  gtag('config', '</xsl:text><xsl:value-of select="$trackid"/><xsl:text disable-output-escaping="yes">');</xsl:text>
+	</script>
       </head>
 
 
