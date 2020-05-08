@@ -40,15 +40,6 @@
         <title>
           <xsl:value-of select="concat($env/system/site/name, ' - ', $env/system/site/organization)" />
         </title>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31592543-1"></script>
-        <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-31592543-1');
-        </script>
 
 
         <meta name="google-site-verification" content="u5QGxt3hqXVdrVTh8HdY9yzBww2RF-Ode35eH9wY-HY" />
@@ -65,6 +56,17 @@
         <link href="portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="{concat($env/system/site/name, ' - ', $env/system/site/organization)}"/>
 
         <xsl:call-template name="css-load"/>
+            <xsl:variable name="trackid">UA-31592543-1</xsl:variable>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="async" src="https://www.googletagmanager.com/gtag/js?id={$trackid}"><xsl:text> </xsl:text></script>
+	<script>
+	  <xsl:text disable-output-escaping="yes">
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  
+	  gtag('config', '</xsl:text><xsl:value-of select="$trackid"/><xsl:text disable-output-escaping="yes">');</xsl:text>
+	</script>
       </head>
 
 
