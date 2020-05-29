@@ -153,6 +153,7 @@
       <!--<item facet="inspireThemeWithAc" sortBy="value" sortOrder="asc" max="35"/>-->
 	  <item facet="topicCat" translator="codelist:gmd:MD_TopicCategoryCode" max="20"/>
 	  <!--<item facet="discipline" sortBy="value" sortOrder="desc" max="35"/>-->
+	  <item facet="essentialVariable" sortBy="value" sortOrder="desc" max="35"/>
 	  <item facet="parameter" sortBy="value" sortOrder="desc" max="35"/>
 	  <item facet="deviceType" sortBy="value" sortOrder="desc" max="10"/>
 	  <item facet="platformType" sortBy="value" sortOrder="desc" max="10"/>
