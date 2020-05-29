@@ -163,6 +163,7 @@
 	  <field name="platformType" tagName="platformType"/>
 	  <field name="deviceType" tagName="deviceType"/>
 	  <field name="parameter" tagName="parameter"/>
+	  <field name="essentialVariable" tagName="essentialVariable" />
       <field name="updateFrequency" tagName="updateFrequency"/>
       <field name="lineage" tagName="lineage"/>
       <field name="responsibleParty" tagName="responsibleParty"/>
