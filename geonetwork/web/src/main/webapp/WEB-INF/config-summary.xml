@@ -110,6 +110,7 @@
 	<facet name="deviceType" indexKey="deviceType" label="deviceType"/>
 	<facet name="parameter" indexKey="parameter" label="parameter"/>
 	<facet name="programme" indexKey="programme" label="programme"/>
+	<facet name="essentialVariable" indexKey="essentialVariable" label="essentialVariable"/>
     <facet name="subTemplateType" indexKey="_root" label="subTemplateTypes"/>
     <facet name="groupOwner" indexKey="_groupOwner" label="groupOwners"/>
     <facet name="publishedForGroup" indexKey="_groupPublished" label="publishedForGroup"/>
