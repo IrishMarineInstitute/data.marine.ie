@@ -392,6 +392,10 @@
 			<Field name="parameter" string="{string(.)}" store="true" index="true"/>
 		</xsl:for-each>
 	    
+	    <xsl:for-each select="//gmd:MD_Keywords[gmd:thesaurusName/gmd:CI_Citation/gmd:title/gmx:Anchor='AtlantOS Essential Variables']/gmd:keyword/gmx:Anchor">
+			<Field name="essentialVariable" string="{string(.)}" store="true" index="true"/>
+		</xsl:for-each>
+	    
 	    <xsl:for-each select="//gmd:MD_Keywords[gmd:thesaurusName/gmd:CI_Citation/gmd:title/gmx:Anchor='Marine Institute Calendar Concept Scheme']/gmd:keyword/gmx:Anchor/@xlink:href">
 			<Field name="kwCalendarUrl" string="{string(.)}" store="true" index="true"/>
 		</xsl:for-each>
